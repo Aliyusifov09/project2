@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+body .flex {
+  display: flex;
+  align-items: center;
+}
+body .menu1 {
+  padding: 20px 120px;
+  border-bottom: 1px rgb(204, 204, 204) solid;
+  height: 55px;
+  justify-content: space-between;
+}
+body .menu1 .icons {
+  width: 130px;
+  font-size: 14px;
+  color: gray;
+}
+body .menu1 .icons i:hover {
+  color: black;
+  transition: 0.5s;
+}
+body .menu1 .lan {
+  font-size: 14px;
+  margin-right: 50px;
+}
+body .menu1 .lan select {
+  margin-right: 5px;
+  width: 110px;
+  padding: 6px 10px 6px 20px;
+  background-color: #ececec;
+  color: #777777;
+  font-weight: 700;
+  border-radius: 3px;
+}
+body .menu1 .lan button {
+  width: 110px;
+  padding: 6px 10px;
+  background-color: #fab700;
+  border: none;
+  color: white;
+  transition: 0.5s;
+  border-radius: 3px;
+}
+body .menu1 .lan button:hover {
+  background-color: white;
+  color: #fab700;
+  border: #fab700 solid 1px;
+}
+body .menu {
+  padding: 15px 130px;
+  position: sticky;
+  top: -5px;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+body .menu button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+body .menu button img {
+  height: 50px;
+}
+body .menu .link {
+  width: 40%;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 50px;
+}
+body .menu .link a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+body .menu .link a:hover {
+  color: #fab700;
+}
+body .menu .link .fa-magnifying-glass {
+  margin-top: 3px;
+  font-size: 16px;
+}
+body .bg {
+  background: url(https://i.pinimg.com/originals/b0/55/d9/b055d9200d45488b19d439ec33614f63.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+}
+body .bg .t {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+}
+body .bg .t h1 {
+  margin-bottom: 15px;
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+}
+body .bg .t h1 span {
+  color: #111111;
+  background-color: #fab700;
+  border-radius: 3px;
+}
+body .bg .t p {
+  width: 520px;
+  font-size: 15px;
+  color: whitesmoke;
+}
+body .bg .t button {
+  margin-top: 20px;
+  color: #fab700;
+  background-color: #111111;
+  width: 150px;
+  height: 50px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-weight: 700;
+}
+body .bg .t button:hover {
+  background-color: #fab700;
+  color: #111111;
+}
+body .s {
+  padding: 100px;
+  height: 100vh;
+}
+body .s h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+body .s p {
+  color: #777;
+  margin-top: 10px;
+  line-height: 25px;
+}
+body .s .idk {
+  margin-top: 120px;
+}
+body .s .idk div {
+  width: 360px;
+  height: 350px;
+  padding: 50px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+body .s .idk div h2 {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 20px;
+}
+body .s .idk div:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+}
+body .lp {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+body .lp h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+body .lp p {
+  margin-top: 20px;
+  color: gray;
+}
+body .lp .i1 {
+  margin-top: 80px;
+  width: 33%;
+}
+body .lp .i1 img {
+  width: 100%;
+}
+body .lp .i2 {
+  position: relative;
+  top: -3px;
+  width: 33%;
+  height: 280px;
+}
+body .lp .i2 img {
+  width: 100%;
+}
+body .lp .i2 h1 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+body .lp .i2 p {
+  color: black;
+  font-size: 13px;
+}
+body .lp .hover1 {
+  position: absolute;
+  width: 99vw;
+  top: 23.7%;
+  display: flex;
+  padding: 0 24px;
+  z-index: 2;
+  height: 38.2%;
+}
+body .lp .hover1 div {
+  width: 31.2%;
+  opacity: 0;
+  transition: 0.5s;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .lp .hover1 div h1 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+body .lp .hover1 div p {
+  color: black;
+  font-size: 13px;
+  width: 400px;
+}
+body .lp .hover1 div:hover {
+  opacity: 1;
+  background-color: rgba(250, 183, 0, 0.8);
+  transform: scale(1.1);
+}
+body .lp .hover2 {
+  position: absolute;
+  width: 99vw;
+  top: 61.4%;
+  display: flex;
+  padding: 0 24px;
+  z-index: 2;
+  height: 280px;
+}
+body .lp .hover2 div {
+  width: 31.2%;
+  opacity: 0;
+  transition: 0.5s;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .lp .hover2 div h1 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+body .lp .hover2 div p {
+  color: black;
+  font-size: 13px;
+  width: 400px;
+}
+body .lp .hover2 div:hover {
+  opacity: 1;
+  background-color: rgba(250, 183, 0, 0.8);
+  transform: scale(1.1);
+}
+body .meeting {
+  position: relative;
+  margin-top: 100px;
+}
+body .meeting h1 {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+body .meeting p {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: gray;
+}
+body .meeting .experts {
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+body .meeting .experts .expert h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+body .meeting .experts .expert p {
+  font-weight: 300;
+  color: gray;
+  font-size: 15px;
+}
+body .meeting .media {
+  top: 30%;
+  padding: 0 11.25vw 0 11.1vw;
+  width: 99vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .meeting .media .hover3 {
+  background-color: #fab700;
+  color: gray;
+  height: 300px;
+  width: 263px;
+  opacity: 0;
+  z-index: 2;
+  transition: 0.5s;
+}
+body .meeting .media .hover3 i {
+  transition: 0.7s;
+  cursor: pointer;
+}
+body .meeting .media .hover3 i:hover {
+  color: #1e1e1e;
+}
+body .meeting .media .hover3:hover {
+  opacity: 0.8;
+}
+body .js {
+  margin-top: 100px;
+  background-color: #FAB700;
+  height: 40vh;
+  width: 99vw;
+  padding: 5%;
+  margin-bottom: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+body .js p {
+  font-size: 55px;
+  font-weight: 500;
+}
+body .js .n {
+  font-size: 16px;
+}
+body .f1 .f2 h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+body .f1 .f2 p {
+  font-size: 21px;
+  font-weight: 300;
+  color: gray;
+}
+body .f1 .f3 {
+  display: flex;
+  padding: 0 100px;
+  margin-top: 100px;
+}
+body .f1 .f3 .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .f1 .f3 .col-md-3 .box {
+  width: 25vw;
+  border: solid 1px #d4d4d4;
+  border-radius: 10px;
+  padding: 13%;
+  height: 28vh;
+  font-size: 16px;
+  transition: 0.4s;
+  margin-bottom: 10%;
+}
+body .f1 .f3 .col-md-3 .box div {
+  display: flex;
+  margin-bottom: 5%;
+  transition: 0.5s;
+}
+body .f1 .f3 .col-md-3 .box div i {
+  font-size: 22px;
+  position: relative;
+  margin-right: 20px;
+  top: -0.3vh;
+}
+body .f1 .f3 .col-md-3 .box div h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+body .f1 .f3 .col-md-3 .box p {
+  color: gray;
+  text-align: left;
+}
+body .f1 .f3 .col-md-3 .box:hover {
+  box-shadow: 1px 1px 20px rgba(20, 20, 20, 0.5);
+}
+body .f1 .f3 .col-md-3 .box:hover div {
+  color: #fab700;
+}
+body .feedback {
+  background-color: #f5faec;
+  padding: 5%;
+  margin-top: 100px;
+}
+body .feedback .fb-div {
+  border: rgb(202, 202, 202) solid 1px;
+  border-radius: 10px;
+  padding: 30px;
+  width: 33vw;
+  height: 28vh;
+  transition: 0.5s;
+  font-size: 15px;
+}
+body .feedback .fb-div img {
+  height: 80px;
+  margin-right: 20px;
+}
+body .feedback .fb-div p {
+  color: gray;
+  width: 23vw;
+  margin: 10px 0;
+}
+body .feedback .fb-div h4 {
+  font-weight: 700;
+  font-size: 15px;
+}
+body .feedback .fb-div:hover {
+  box-shadow: 1px 1px 20px rgba(20, 20, 20, 0.5);
+  transition: 0.5s;
+}
+body .images {
+  width: 85vw;
+  margin: 0 auto;
+  padding: 100px;
+}
+body .images img {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+body .images img:hover {
+  opacity: 1;
+}
+body .finish {
+  background-color: #171717;
+  padding: 5% 10%;
+  height: 60vh;
+}
+body .finish .flex {
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .finish .flex .abt {
+  width: 15vw;
+  margin-top: -39px;
+  margin-right: 60px;
+}
+body .finish .flex .contact {
+  width: 350px;
+  margin-right: 50px;
+}
+body .finish .flex .contact .number {
+  color: #FAB700;
+  margin-top: 15px;
+  font-size: 27px;
+  font-weight: 500;
+}
+body .finish .flex .news {
+  margin-top: -67px;
+}
+body .finish .flex .news input {
+  padding: 10px;
+  border-radius: 20px;
+  width: 450px;
+  height: 5vh;
+  margin-top: 20px;
+  outline: none;
+}
+body .finish .flex .news div {
+  position: relative;
+}
+body .finish .flex .news div button {
+  position: absolute;
+  background-color: #FAB700;
+  border: none;
+  top: 3.2vh;
+  right: 0.2vw;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  padding: 9px;
+  cursor: pointer;
+}
+body .finish .flex .news div button i {
+  position: relative;
+  top: -5px;
+  left: -1px;
+}
+body .finish h2 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+body .finish p {
+  color: gray;
+}
+body .finish .cr {
+  margin-top: 60px;
+  display: flex;
+  width: 85vw;
+  justify-content: space-between;
+}
+body .finish .cr span {
+  color: #FAB700;
+}
+body .finish .cr .ficons {
+  position: relative;
+  margin-left: 80%;
+}
+body .finish .cr .ficons i {
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+body .finish .cr .ficons i:hover {
+  color: #fab700;
+}/*# sourceMappingURL=build.css.map */
