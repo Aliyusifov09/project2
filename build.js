@@ -18,7 +18,7 @@ let start = setInterval(() => {
         num3++;
         num4++;
         num5++;
-        if(num1 > 168 ) {
+        if(num1 >= 168 ) {
             clearInterval(grow);
         }
     },20)
